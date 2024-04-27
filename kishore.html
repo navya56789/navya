@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husband's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #fff2e6; /* Cream color */
+            color: #333; /* Dark text color */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #f44336;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome, Husband!</h1>
+    <p>Click the button below to see a message.</p>
+    <button id="showMessageBtn">Show Message</button>
+    <div id="message"></div>
+
+    <script>
+        // Function to show the message
+        function showMessage() {
+            var messageDiv = document.getElementById("message");
+            messageDiv.innerText = "❤️ Hello, dear husband! I love you! ❤️";
+        }
+
+        // Attach click event listener to the button
+        document.getElementById("showMessageBtn").addEventListener("click", showMessage);
+    </script>
+
+</body>
+</html>
